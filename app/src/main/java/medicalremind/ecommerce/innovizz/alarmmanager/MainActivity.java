@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         long []times = new long[2];
         ArrayList<String> dates = new ArrayList<>();
-        String myDate = "2018/03/29 17:05:00";  String myDateTwo = "2018/03/29 17:07:00";
+        String myDate = "2018/04/01 14:24:00";  String myDateTwo = "2018/04/01 14:26:00";
         dates.add(myDate); dates.add(myDateTwo);
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
         intentArray = new ArrayList<PendingIntent>(); PendingIntent pi;
         for(int f=0;f<2;f++){
             Intent intent = new Intent(MainActivity.this, AlarmReceiver.class);
+            intent.putExtra("alarm","XYZ");
             pi=PendingIntent.getBroadcast(MainActivity.this, f,intent, 0);
 
             alarmManager[f] = (AlarmManager) getSystemService(ALARM_SERVICE);

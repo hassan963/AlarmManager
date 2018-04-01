@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TestActivity"/>
+        <service android:name=".service.RingtonePlayingService"/>
         <receiver android:name=".alarm.AlarmReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>

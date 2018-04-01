@@ -37,9 +37,10 @@ public class DeviceBootReceiver extends BroadcastReceiver {
 
             calendars.add(calendarOne); calendars.add(calendarTwo);*/
 
+
             long []times = new long[2];
             ArrayList<String> dates = new ArrayList<>();
-            String myDate = "2018/03/29 17:05:00";  String myDateTwo = "2018/03/29 17:07:00";
+            String myDate = "2018/04/01 14:24:00";  String myDateTwo = "2018/04/01 14:26:00";
             dates.add(myDate); dates.add(myDateTwo);
 
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
